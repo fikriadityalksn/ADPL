@@ -1,0 +1,36 @@
+<head>  
+<title>Login</title>  
+<style type="text/css">   table{    position: absolute;    height: 100px;    top: 50%;    left: 50%;    margin: -100px 0 0 -150px;   }  
+</style> 
+</head> 
+
+<body>  
+
+	<form method="post" action="
+	<?php echo base_url().'index.php/MyController/login'?>">  
+	<table>   
+	<tr>    
+	<td>Username</td>    
+	<td><input type="text" name="username"></td>   
+	</tr>   
+	<tr>    
+	<td>Password</td>    
+	<td><input type="password" name="password">
+	</td>   
+	</tr>   
+	<tr>    
+	<td></td>    
+	<td><input type="submit" value="LOGIN"></td>   
+	</tr>                            <tr>    
+	<td colspan="2"><?php echo $err_message;?></td>   
+	</tr> 
+	</form>
+	<form action="
+	<?php echo base_url().'index.php/createuser'?>">
+	<tr>
+	<td><input type="submit" value="createuser"></td>
+	</tr>
+	
+	</table>  
+	 
+	</body> 
