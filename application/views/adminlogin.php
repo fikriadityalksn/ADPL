@@ -45,11 +45,7 @@
           </div>
         </form>
         <br>  
-        <a href="<?php echo base_url().'index.php/createuser'?>">
-        <button>Create New</button></a> <br> <br>
-        <!-- <form action="<?php echo base_url().'index.php/createuser'?>"> -->
-        <!-- <input type="submit" value="createuser"></td> -->
-        </form>
+        
         <!-- <a href="lupa.php">Forget Password</a><br> -->
 
       </div><!-- /.login-box-body -->

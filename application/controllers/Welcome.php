@@ -26,7 +26,7 @@ $where = array('$nama_puskes' => $nama_puskes);
 $res = $this->mymodel->DeleteData('data', $where);
 if($res >= 1) {
 	$data = $this->mymodel->getBarang();
-	this->load-view('tabel', array('data' => $data));
+	$this->load->view('tabel', array('data' => $data));
 }	
 }	
 public function doUpdate($nama_puskes) {
@@ -41,10 +41,10 @@ public function doUpdate($nama_puskes) {
 		'jumlah_pasien_kb' => $jumlah_pasien_kb,
 		);
 	$where = array('$nama_puskes' => $nama_puskes);
-	$res = $this-mymodel->UpdateData('data', $data_update, $where);
+	$res = $this->mymodel->UpdateData('data', $data_update, $where);
 	if($res >= 1) {
 	$data = $this->mymodel->getBarang();
-	this->load-view('tabel', array('data' => $data));
+	$this->load->view('tabel', array('data' => $data));
 }			
 }
 }

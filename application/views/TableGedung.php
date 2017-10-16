@@ -59,13 +59,13 @@
 	<div id="sidebar">
 	  <a href="<?php echo base_url() .'index.php/home'?>" class="visible-phone">
 	    <i class="icon icon-home"></i> 
-	    Dashboard
+	    Home
 	  </a>
 	  <ul>
 	    <li class="active">
 	      <a href="<?php echo base_url() .'index.php/home'?>">
 	      <i class="icon icon-home"></i> 
-	      <span>Dashboard</span>
+	      <span>Home</span>
 	      </a> 
 	    </li>
 	    <li class="active">
