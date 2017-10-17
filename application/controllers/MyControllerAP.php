@@ -206,49 +206,10 @@ function do_updateGedung(){
   	$this->load->view('tablegedung', array('gedung' => $data));
 	}
 
-function home(){
-	$this->load->view('indexadmin'); 
-}
-function home1(){
-	$this->load->view('home'); 
-}
-function puskes1(){
-	$this->load->view('form-common'); 
-}
-function pegawai1(){
-	$this->load->view('form-pegawai'); 
-}
-function tablepegawai(){
-	$pegawai = $this->mymodel->getDataPegawai();  
-	// $this->load->view('view', array('data' => $data));
-	$this->load->view('tablepegawai',array('pegawai' => $pegawai)); 
-}
-function tablepuskesmas(){
-	$puskes = $this->mymodel->getDataPuskes();  
-	$this->load->view('tablepuskesmas',array('puskes' => $puskes)); 
-}
 function tablegedung(){
 	$gedung = $this->mymodel->getGedungAdmin();  
 	// $this->load->view('view', array('data' => $data));
 	$this->load->view('tablegedung',array('gedung' => $gedung)); 
-}
-function sambutan(){
-	$this->load->view('sambutan'); 
-}
-function visimisi(){
-	$this->load->view('visimisi'); 
-}
-function perbup(){
-	$this->load->view('perbud'); 
-}
-function puskesmas(){
-	$this->load->view('puskesmas'); 
-}
-function rumahsakit(){
-	$this->load->view('rumahsakit'); 
-}
-function kontak(){
-	$this->load->view('kontakkami'); 
 }
 
 function logout() {

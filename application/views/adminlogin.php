@@ -46,7 +46,7 @@
         </form>
         <br>  
         
-        <!-- <a href="lupa.php">Forget Password</a><br> -->
+        <a href="index">Kembali ke beranda</a><br> 
 
       </div><!-- /.login-box-body -->
      

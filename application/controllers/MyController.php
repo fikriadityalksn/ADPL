@@ -30,19 +30,6 @@ function indexgedung($id) {
 	$data = $this->mymodel->getDataGedung("where news_id = " .$id);
 	$this->load->view('infogedung', array('data' => $data));
 }
-
-function createUser() {  
-	$data = array(     
-		'username' => $this->input->post('username'),         
-		'password' => $this->encript(),
-		'passdek'  => $this->decript()); 
-
- 
-  	$this->mymodel->addUser($data);
-  	$data['err_message']="";   
-  	$this->load->view('adminlogin',$data);
-}   
-
 function createUserDek() {  
 	$data = array(     
 		'username' => $this->input->post('username'),         
